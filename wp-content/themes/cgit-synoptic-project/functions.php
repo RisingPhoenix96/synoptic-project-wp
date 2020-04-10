@@ -15,6 +15,6 @@ define('IMAGE_URL', THEME_URL . '/images');
  * 
  * All functions are stored as separate files inside includes to keep functions.php clean
  */
-foreach (glob(__DIR__ . '/includes/*php') as $file) {
+foreach (glob(__DIR__ . '/includes/*.php') as $file) {
     require_once $file;
 }
