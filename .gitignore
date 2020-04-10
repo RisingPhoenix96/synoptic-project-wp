@@ -1,4 +1,4 @@
-node_modules
-wp-content/uploads
-wp-config
+/wp-content/uploads/
+wp-config.php
 .htaccess
+node_modules
