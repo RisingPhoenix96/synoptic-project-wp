@@ -1,0 +1,34 @@
+.portfolio-page-content {
+    margin-top: 1rem;
+
+    .main-wrap {
+        @extend .row;
+    }
+
+    .photo-gallery {
+        @extend .col-12;
+        @extend .col-normal-9;
+
+        .image-wrap {
+            @extend .row;
+
+            .gallery-popup-image {
+                @extend .col-12;
+                @extend .col-micro-6;
+                @extend .col-mega-4;
+
+                margin-bottom: 1rem;
+
+                @include media-query(micro) {
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+    }
+
+    .sidebar {
+        @extend .col-12;
+        @extend .col-normal-3;
+        @include trim-content-top;
+    }
+}

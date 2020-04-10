@@ -1,0 +1,54 @@
+//
+// Fonts
+//
+
+$body-font: "Open Sans",
+sans-serif;
+$body-font-size: 18px;
+
+// Font size based on type scale(s)
+@mixin font-size($n) {
+    $scales: (default: 1.25,
+            milli: 1.28,
+            mega: 1.333,
+        );
+
+    // Negative font sizes are not responsive and cannot be smaller than a
+    // particular font size.
+    @if $n==-1 {
+        font-size: 0.875em;
+    }
+
+    @else if $n < -1 {
+        font-size: 0.75em;
+    }
+
+    @else {
+
+        @each $key,
+        $scale in $scales {
+            $size: 1em * pow($scale, $n);
+
+            @if not map-has-key($scales, $key) {
+                font-size: $size;
+            }
+
+            @else {
+                @include media-query($key) {
+                    font-size: $size;
+                }
+            }
+        }
+    }
+}
+
+// Font weight aliases
+@mixin font-weight($alias) {
+    $weights: (light: 300,
+            normal: 400,
+            semi-bold: 500,
+            bold: 700,
+        );
+
+    font-weight: map-get($weights, $alias);
+}

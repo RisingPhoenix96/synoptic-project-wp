@@ -1,0 +1,45 @@
+//
+// Styles
+//
+
+// Bootstrap override
+@import 'configuration';
+
+// Libraries
+@import '../bootstrap/scss/bootstrap';
+@import 'tiny_slider';
+@import 'lightbox';
+
+// Utilities and global settings
+@import 'global';
+@import 'utilities';
+@import 'media';
+
+// Common
+@import 'colors';
+@import 'fonts';
+@import 'typography';
+@import 'accessibility';
+@import 'layout';
+@import 'transitions';
+@import 'trim';
+@import 'buttons';
+@import 'shadows';
+
+// Forms
+@import 'forms';
+
+// Features
+@import 'figures';
+@import 'videos';
+
+// Sections
+@import 'site_header';
+@import 'banner';
+@import 'introductory_text';
+@import 'homepage_gallery';
+@import 'portfolio_page';
+@import 'about_me_page';
+@import 'blog';
+@import 'contact';
+// @import 'site_footer';

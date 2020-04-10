@@ -1,0 +1,37 @@
+.contact-page-content {
+    .main-wrap {
+        max-width: 622px;
+        margin: auto;
+    }
+
+    .contact-form {
+        @extend .row;
+
+        .input-wrap {
+            @extend .col-12;
+            @extend .col-micro-6;
+            margin-bottom: 1rem;
+
+            &--full-width {
+                width: 100% !important;
+                max-width: 100% !important;
+                flex-basis: 100% !important;
+            }
+
+            input,
+            textarea,
+            button {
+                width: 100%;
+                border: 1px solid $light-grey;
+                padding: .5rem;
+            }
+
+            button {
+                @include media-query(micro) {
+                    display: inline-block;
+                    width: auto;
+                }
+            }
+        }
+    }
+}

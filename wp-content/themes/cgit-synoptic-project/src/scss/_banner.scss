@@ -1,0 +1,52 @@
+.site-banner {
+    @include page-section-spacer(margin, false, true);
+    padding: 3rem 1rem;
+    // TODO: apply a default bg image
+    //background-image: url(../images/backgrounds/banner-background-default.jpg);
+    background-position: center;
+    background-size: cover;
+
+    @include media-query(milli) {
+        //padding: 6rem 4rem;
+        padding: 4.23rem 4rem;
+    }
+
+    .text-box {
+        background-color: rgba(#000, 0.5);
+        padding: 2rem;
+        max-width: none;
+
+        @include media-query(micro) {
+            padding: 40px 45px;
+        }
+
+        &.--small {
+            display: inline-block;
+        }
+
+        .title {
+            @include font-size(3);
+            @include font-weight(light);
+            margin: 0;
+            color: #FFF;
+            line-height: 1.25;
+            letter-spacing: .5px;
+            text-transform: capitalize;
+
+            @include media-query(mega) {
+                font-size: 47px;
+            }
+        }
+
+        .text {
+            color: #FFF;
+            margin: 14px 0;
+            @include font-weight(light);
+            font-size: 20px;
+        }
+
+        .button {
+            margin-top: 37px;
+        }
+    }
+}

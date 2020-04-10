@@ -1,0 +1,19 @@
+.about-me-page-content {
+    margin-top: 1rem;
+
+    .content {
+        @extend .row;
+    }
+
+    .image {
+        @extend .col-12;
+        @extend .col-micro-4;
+        margin-bottom: 1rem;
+    }
+
+    .text {
+        @extend .col-12;
+        @extend .col-micro-8;
+        @include trim-content-top;
+    }
+}

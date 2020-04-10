@@ -1,0 +1,201 @@
+.site-header {
+    background-color: #FFF;
+    position: relative;
+
+    &.--no-js {
+        .main-nav {
+            position: static;
+            max-width: 100%;
+        }
+
+        .header-links {
+            width: 100%;
+
+            @include media-query(mega) {
+                max-width: 80%;
+            }
+        }
+    }
+
+    .flex-wrap {
+        @include media-query(milli) {
+            display: flex;
+        }
+
+        @include media-query(mega) {
+            justify-content: space-between;
+        }
+    }
+
+    .logo {
+        margin: 0;
+
+        @include media-query(milli) {
+            margin-left: 1rem;
+        }
+
+        >a>img {
+            max-height: 90px;
+            display: block;
+            margin: 1rem auto 1rem auto;
+
+            @include media-query(mega) {
+                max-height: 106px;
+            }
+        }
+    }
+
+    /** Top strip above nav **/
+    .header-links {
+        @include media-query(mega) {
+            width: 61%;
+        }
+    }
+
+    /** Nav **/
+    .main-nav {
+        background-color: #FFF;
+        position: absolute;
+        top: 159px;
+        width: 100%;
+        border-top: 1px solid #FFF;
+
+        @include media-query(milli) {
+            top: 122px;
+            right: 0;
+            max-width: 300px;
+        }
+
+        @include media-query(mega) {
+            position: static;
+            max-width: none;
+            height: auto;
+            padding-right: 1.4rem;
+            border-top: none;
+            width: auto;
+        }
+
+        &.--hidden {
+            @include media-query(0, mega) {
+                display: none;
+            }
+        }
+
+        ul {
+            padding: 0;
+            margin: 0;
+
+            @include media-query(mega) {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-end;
+                align-items: center;
+                height: 100%;
+            }
+
+            li {
+                list-style: none;
+                text-align: left;
+                position: relative;
+
+                @include media-query(mega) {
+                    padding: .8rem;
+
+                    &:last-of-type {
+                        padding-right: 0;
+                    }
+                }
+
+                @include media-query(giga) {
+                    padding-right: 1.5rem;
+                }
+
+                @include media-query(1700px) {
+                    padding-right: 2.833rem;
+                }
+            }
+
+            li.current-menu-item>a {
+                background-color: $blue;
+                color: #FFF;
+
+                @include media-query(mega) {
+                    background-color: #FFF;
+                    color: $text-color;
+                    position: relative;
+
+                    &:after {
+                        content: "";
+                        width: 25px;
+                        height: 3px;
+                        background-color: $blue;
+                        position: absolute;
+                        bottom: 0;
+                        left: calc(50% - 11px);
+                    }
+                }
+
+            }
+
+            li>a {
+                color: $text-color;
+                display: block;
+                padding: .8rem 1rem;
+
+                @include media-query(mega) {
+                    padding: 0;
+                }
+
+                &:hover {
+                    text-decoration: none;
+                    background-color: $blue;
+                    color: #FFF;
+
+                    @include media-query(mega) {
+                        background-color: #FFF;
+                        color: $blue;
+                    }
+                }
+            }
+        }
+    }
+
+    /** Mobile nav toggle and contact button **/
+    .header-mobile-cta {
+        display: flex;
+
+        @include media-query(milli) {
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+        }
+
+        @include media-query(mega) {
+            display: none;
+        }
+
+        &.--hidden {
+            display: none;
+        }
+
+        >.nav-toggle {
+            background-color: $darker-grey;
+            justify-content: center;
+        }
+
+        >.button {
+            width: 100%;
+            padding: .8rem;
+            text-transform: uppercase;
+
+            @include media-query(milli) {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                min-width: 150px;
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+/** BOOTSTRAP OVERRIDE */
+
+// Custom colours
+
+$light-grey: #e2dfde;
+$medium-grey: #f3f1f0;
+$darker-grey: #dbd9d8;
+$darkest-grey: #2a2a2a;
+
+// Bootstrap specific colours
+$blue: #01cfff;
+
+// Breakpoints
+
+$grid-breakpoints: (xs: 0,
+    nano: 480px,
+    micro: 640px,
+    milli: 800px,
+    normal: 960px,
+    kilo: 1120px,
+    mega: 1280px,
+    giga: 1440px,
+    tera: 1600px,
+) !default;

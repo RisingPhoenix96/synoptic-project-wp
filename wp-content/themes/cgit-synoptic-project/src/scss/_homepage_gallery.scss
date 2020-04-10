@@ -1,0 +1,18 @@
+.homepage-content-gallery {
+    height: calc(100vh - 138px);
+
+    .page-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        height: 100%;
+    }
+
+    &-text {
+        max-width: 730px;
+
+        >.title {
+            margin-top: 0;
+        }
+    }
+}

@@ -1,0 +1,92 @@
+//
+// Layout
+//
+
+// Float container
+@mixin float-container {
+    &::after {
+        clear: both;
+        content: "";
+        display: block;
+    }
+}
+
+// Page section wrapper
+.page-wrap {
+    @include float-container;
+
+    margin: 0 auto;
+    max-width: 1280px;
+    padding: 0 1em;
+    position: relative;
+
+    &.--small-wrap {
+        max-width: 960px;
+    }
+}
+
+/**
+* Page section spacer
+* Adds a top and/or bottom margin or padding to an element
+*/
+@mixin page-section-spacer($property:margin, $top:false, $bottom:false) {
+
+    $small: 3rem;
+    $med: 6rem;
+    $large: 9rem;
+
+    @if($property==margin) {
+
+        @if($top==true) {
+            margin-top: $large;
+
+            @media screen and (min-width: 0px) {
+                margin-top: $small;
+            }
+
+            @media screen and (min-width: 800px) {
+                margin-top: $med;
+            }
+        }
+
+        @if($bottom==true) {
+            margin-bottom: $large;
+
+            @media screen and (min-width: 0px) {
+                margin-bottom: $small;
+            }
+
+            @media screen and (min-width: 800px) {
+                margin-bottom: $med;
+            }
+        }
+    }
+
+    @else if($property==padding) {
+
+        @if($top==true) {
+            padding-top: $large;
+
+            @media screen and (min-width: 0px) {
+                padding-top: $small;
+            }
+
+            @media screen and (min-width: 800px) {
+                padding-top: $med;
+            }
+        }
+
+        @if($bottom==true) {
+            padding-bottom: $large;
+
+            @media screen and (min-width: 0px) {
+                padding-bottom: $small;
+            }
+
+            @media screen and (min-width: 800px) {
+                padding-bottom: $med;
+            }
+        }
+    }
+
+}
