@@ -5,8 +5,8 @@
 /**
  * Declare the theme directory and image directory
  */
-define('THEME_DIR', get_stylesheet());
-define('THEME_URL', get_stylesheet_uri());
+define('THEME_DIR', get_stylesheet_directory());
+define('THEME_URL', get_stylesheet_directory_uri());
 define('IMAGE_DIR', THEME_DIR . '/images');
 define('IMAGE_URL', THEME_URL . '/images');
 
