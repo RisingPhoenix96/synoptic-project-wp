@@ -1,9 +1,13 @@
-<div class="introductory-text">
-    <div class="page-wrap  --small-wrap">
-        <h3 class="title">Heading</h3>
-        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, eius expedita
-            exercitationem sequi fugit harum perspiciatis saepe, tempore, sed provident commodi libero sunt nisi
-            totam maiores voluptas officiis! Rem officiis, reprehenderit veritatis optio vel a corporis odit id
-            fuga sint assumenda eum praesentium laborum est, sit eos delectus nemo nostrum!</p>
+<?php
+$intro_text_title = get_field('synoptic_introductory_text_title');
+$intro_text_text = get_field('synoptic_introductory_text_text');
+?>
+
+<?php if ($intro_text_title || $intro_text_text) : ?>
+    <div class="introductory-text">
+        <div class="page-wrap  --small-wrap">
+            <h3 class="title"><?= $intro_text_title ?></h3>
+            <p class="text"><?= $intro_text_text ?></p>
+        </div>
     </div>
-</div>
+<?php endif; ?>
