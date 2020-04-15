@@ -10152,6 +10152,7 @@ textarea:focus {
 .site-banner {
   margin-bottom: 9rem;
   padding: 3rem 1rem;
+  background-image: url(/wp-content/themes/cgit-synoptic-project/images/banner_default.png);
   background-position: center;
   background-size: cover; }
   @media screen and (min-width: 0px) {

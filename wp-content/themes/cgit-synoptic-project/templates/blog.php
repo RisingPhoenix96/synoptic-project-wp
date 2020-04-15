@@ -4,6 +4,8 @@
 
 get_header();
 
+get_template_part('parts/site_banner');
+
 ?>
 
 <div class="blog-content">

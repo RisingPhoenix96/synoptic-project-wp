@@ -1,8 +1,7 @@
 .site-banner {
     @include page-section-spacer(margin, false, true);
     padding: 3rem 1rem;
-    // TODO: apply a default bg image
-    //background-image: url(../images/backgrounds/banner-background-default.jpg);
+    background-image: url(#{$image_dir}/banner_default.png);
     background-position: center;
     background-size: cover;
 
