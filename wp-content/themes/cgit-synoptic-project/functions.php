@@ -18,3 +18,5 @@ define('IMAGE_URL', THEME_URL . '/images');
 foreach (glob(__DIR__ . '/includes/*.php') as $file) {
     require_once $file;
 }
+
+require_once __DIR__ . '/includes/monolith/monolith.php';

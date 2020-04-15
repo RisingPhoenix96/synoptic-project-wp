@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "bootstrap": "^4.4.1",
+    "castlegate-align": "^1.2.2",
     "jquery": "^3.4.1",
     "lightbox2": "^2.11.1",
     "magnific-popup": "^1.1.0",
