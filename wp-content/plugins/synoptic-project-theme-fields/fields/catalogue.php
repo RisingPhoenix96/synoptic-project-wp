@@ -8,18 +8,11 @@ add_action('acf/init', function () {
                 'value' => 'templates/catalogue.php',
             ],
         ],
-        [
-            [
-                'param' => 'page_template',
-                'operator' => '==',
-                'value' => 'templates/contact.php',
-            ],
-        ]
     ];
 
     acf_add_local_field_group([
-        'key' => 'synoptic_introductory_text',
-        'title' => 'Introductory Text',
+        'key' => 'synoptic_catalogue_gallery',
+        'title' => 'Photo Catalogue',
         'location' => $location,
         'menu_order' => 10,
         'hide_on_screen' => [
@@ -28,16 +21,10 @@ add_action('acf/init', function () {
         ],
         'fields' => [
             [
-                'key' => 'synoptic_introductory_text__title',
-                'label' => 'Title',
-                'name' => 'synoptic_introductory_text_title',
-                'type' => 'text',
-            ],
-            [
-                'key' => 'synoptic_introductory_text__text',
-                'label' => 'Text',
-                'name' => 'synoptic_introductory_text_text',
-                'type' => 'textarea',
+                'key' => 'synoptic_catalogue_gallery__images',
+                'label' => 'Images',
+                'name' => 'synoptic_catalogue_gallery_images',
+                'type' => 'gallery',
             ],
         ],
     ]);

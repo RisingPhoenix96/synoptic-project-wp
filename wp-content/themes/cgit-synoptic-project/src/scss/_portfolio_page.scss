@@ -13,8 +13,7 @@
             @extend .row;
 
             .gallery-popup-image {
-                @extend .col-12;
-                @extend .col-micro-6;
+                @extend .col-6;
                 @extend .col-mega-4;
 
                 margin-bottom: 1rem;

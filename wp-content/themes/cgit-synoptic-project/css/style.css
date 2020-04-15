@@ -491,7 +491,7 @@ pre {
     padding-right: 0;
     padding-left: 0; }
 
-.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .portfolio-page-content .photo-gallery, .portfolio-page-content .photo-gallery .image-wrap .gallery-popup-image, .portfolio-page-content .sidebar, .about-me-page-content .image, .about-me-page-content .text, .blog-content .posts-list, .blog-content .posts-list .posts-wrap .post, .blog-content .sidebar, .contact-page-content .contact-form .input-wrap, .col,
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .portfolio-page-content .photo-gallery .image-wrap .gallery-popup-image, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .portfolio-page-content .photo-gallery, .portfolio-page-content .sidebar, .about-me-page-content .image, .about-me-page-content .text, .blog-content .posts-list, .blog-content .posts-list .posts-wrap .post, .blog-content .sidebar, .contact-page-content .contact-form .input-wrap, .col,
 .col-auto, .col-nano-1, .col-nano-2, .col-nano-3, .col-nano-4, .col-nano-5, .col-nano-6, .col-nano-7, .col-nano-8, .col-nano-9, .col-nano-10, .col-nano-11, .col-nano-12, .col-nano,
 .col-nano-auto, .col-micro-1, .col-micro-2, .col-micro-3, .col-micro-4, .col-micro-5, .col-micro-6, .col-micro-7, .col-micro-8, .col-micro-9, .col-micro-10, .col-micro-11, .col-micro-12, .col-micro,
 .col-micro-auto, .col-milli-1, .col-milli-2, .col-milli-3, .col-milli-4, .col-milli-5, .col-milli-6, .col-milli-7, .col-milli-8, .col-milli-9, .col-milli-10, .col-milli-11, .col-milli-12, .col-milli,
@@ -560,7 +560,7 @@ pre {
   flex: 0 0 41.66667%;
   max-width: 41.66667%; }
 
-.col-6 {
+.col-6, .portfolio-page-content .photo-gallery .image-wrap .gallery-popup-image {
   flex: 0 0 50%;
   max-width: 50%; }
 
@@ -584,7 +584,7 @@ pre {
   flex: 0 0 91.66667%;
   max-width: 91.66667%; }
 
-.col-12, .portfolio-page-content .photo-gallery, .portfolio-page-content .photo-gallery .image-wrap .gallery-popup-image, .portfolio-page-content .sidebar, .about-me-page-content .image, .about-me-page-content .text, .blog-content .posts-list, .blog-content .posts-list .posts-wrap .post, .blog-content .sidebar, .contact-page-content .contact-form .input-wrap {
+.col-12, .portfolio-page-content .photo-gallery, .portfolio-page-content .sidebar, .about-me-page-content .image, .about-me-page-content .text, .blog-content .posts-list, .blog-content .posts-list .posts-wrap .post, .blog-content .sidebar, .contact-page-content .contact-form .input-wrap {
   flex: 0 0 100%;
   max-width: 100%; }
 
@@ -826,7 +826,7 @@ pre {
   .col-micro-5 {
     flex: 0 0 41.66667%;
     max-width: 41.66667%; }
-  .col-micro-6, .portfolio-page-content .photo-gallery .image-wrap .gallery-popup-image, .blog-content .posts-list .posts-wrap .post, .contact-page-content .contact-form .input-wrap {
+  .col-micro-6, .blog-content .posts-list .posts-wrap .post, .contact-page-content .contact-form .input-wrap {
     flex: 0 0 50%;
     max-width: 50%; }
   .col-micro-7 {
@@ -9561,7 +9561,7 @@ body.lb-disable-scrolling {
   width: 32px;
   height: 32px;
   margin: 0 auto;
-  background: url(../../content/images/icons/loading.gif) no-repeat; }
+  background: url(/wp-content/themes/cgit-synoptic-project/images/icons/loading.gif) no-repeat; }
 
 .lb-nav {
   position: absolute;
@@ -9588,7 +9588,7 @@ body.lb-disable-scrolling {
   width: 34%;
   left: 0;
   float: left;
-  background: url(../../content/images/icons/prev.png) left 48% no-repeat;
+  background: url(/wp-content/themes/cgit-synoptic-project/images/icons/prev.png) left 48% no-repeat;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
   -webkit-transition: opacity 0.6s;
@@ -9604,7 +9604,7 @@ body.lb-disable-scrolling {
   width: 64%;
   right: 0;
   float: right;
-  background: url(../../content/images/icons/next.png) right 48% no-repeat;
+  background: url(/wp-content/themes/cgit-synoptic-project/images/icons/next.png) right 48% no-repeat;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
   -webkit-transition: opacity 0.6s;
@@ -9659,7 +9659,7 @@ body.lb-disable-scrolling {
   float: right;
   width: 30px;
   height: 30px;
-  background: url(../../content/images/icons/close.png) top right no-repeat;
+  background: url(/wp-content/themes/cgit-synoptic-project/images/icons/close.png) top right no-repeat;
   text-align: right;
   outline: none;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);

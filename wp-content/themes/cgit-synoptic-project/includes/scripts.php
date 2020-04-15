@@ -8,5 +8,5 @@ add_action('wp_enqueue_scripts', function () {
         '//fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;1,300&display=swap',
     ]);
 
-    terminus_enqueue('/js/script.js');
+    terminus_enqueue('js/script.js');
 });
