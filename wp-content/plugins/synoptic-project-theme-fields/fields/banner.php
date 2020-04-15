@@ -51,7 +51,6 @@ add_action('acf/init', function () {
         'location' => $location,
         'menu_order' => 10,
         'hide_on_screen' => [
-            'the_content',
             'the_excerpt',
         ],
         'fields' => [
