@@ -10061,7 +10061,8 @@ textarea:focus {
         height: auto;
         padding-right: 1.4rem;
         border-top: none;
-        width: auto; } }
+        width: auto;
+        display: flex; } }
     @media all and (max-width: 1279px) {
       .site-header .main-nav.--hidden {
         display: none; } }
@@ -10232,16 +10233,38 @@ textarea:focus {
     margin: 0.333333333em 0; }
 
 .homepage-content-gallery {
-  height: calc(100vh - 138px); }
+  height: calc(100vh - 138px);
+  position: relative;
+  overflow: hidden; }
   .homepage-content-gallery .page-wrap {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    height: 100%; }
+    height: 100%;
+    z-index: 9999;
+    height: 100vh; }
   .homepage-content-gallery-text {
-    max-width: 730px; }
+    max-width: 730px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FFF;
+    padding: 1em; }
+    @media all and (min-width: 960px) {
+      .homepage-content-gallery-text {
+        padding: 2em; } }
     .homepage-content-gallery-text > .title {
       margin-top: 0; }
+  .homepage-content-gallery .home-image-gallery {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0; }
+    .homepage-content-gallery .home-image-gallery > .slide {
+      width: 100vw;
+      height: 100vh;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover; }
 
 .portfolio-page-content {
   margin-top: 1rem; }

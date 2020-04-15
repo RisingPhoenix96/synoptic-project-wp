@@ -36,13 +36,6 @@ add_action('acf/init', function () {
                 'value' => 'templates/contact.php',
             ],
         ],
-        [
-            [
-                'param' => 'page_template',
-                'operator' => '!==',
-                'value' => 'templates/home.php',
-            ],
-        ],
     ];
 
     acf_add_local_field_group([

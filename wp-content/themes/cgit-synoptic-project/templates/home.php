@@ -4,4 +4,11 @@
 
 get_header();
 
-get_template_part('/parts/home_content');
+?>
+
+<div class="homepage-content-gallery">
+    <div class="page-wrap">
+        <?php get_template_part('/parts/home_content'); ?>
+    </div>
+    <?php get_template_part('/parts/home_gallery'); ?>
+</div>

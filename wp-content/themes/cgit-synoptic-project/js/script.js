@@ -5768,6 +5768,25 @@ $(function() {
 });
 
 $(function() {
+    $(".home-image-gallery").removeClass("--hidden");
+    var e = tns({
+        container: ".home-image-gallery",
+        mode: "gallery",
+        items: 1,
+        autoplay: true,
+        autoplayButtonOutput: false,
+        autoplayTimeout: 7e3,
+        speed: 2500,
+        loop: true,
+        nav: false,
+        mouseDrag: false,
+        arrowKeys: false,
+        touch: false,
+        controls: false
+    });
+});
+
+$(function() {
     var e = $(".site-header");
     var t = $(".main-nav");
     var n = $(".submenu-toggle");

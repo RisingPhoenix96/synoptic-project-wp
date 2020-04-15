@@ -1,18 +1,45 @@
 .homepage-content-gallery {
     height: calc(100vh - 138px);
+    position: relative;
+    overflow: hidden;
 
     .page-wrap {
         display: flex;
         align-items: center;
         justify-content: flex-end;
         height: 100%;
+        z-index: 9999;
+        height: 100vh;
     }
 
     &-text {
         max-width: 730px;
+        background-color: rgba(#000, .5);
+        color: #FFF;
+        padding: 1em;
+
+        @include media-query(normal) {
+            padding: 2em;
+        }
 
         >.title {
             margin-top: 0;
+        }
+    }
+
+    .home-image-gallery {
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        >.slide {
+            width: 100vw;
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
         }
     }
 }
