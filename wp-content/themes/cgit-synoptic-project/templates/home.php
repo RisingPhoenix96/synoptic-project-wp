@@ -12,3 +12,5 @@ get_header();
     </div>
     <?php get_template_part('/parts/home_gallery'); ?>
 </div>
+
+<?php get_footer() ?>

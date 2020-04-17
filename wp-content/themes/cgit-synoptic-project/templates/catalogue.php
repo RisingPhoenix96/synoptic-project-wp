@@ -26,3 +26,5 @@ get_template_part('parts/introductory_text');
         </div>
     </div>
 </div>
+
+<?php get_footer() ?>

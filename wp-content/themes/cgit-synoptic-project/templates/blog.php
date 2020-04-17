@@ -24,3 +24,5 @@ get_template_part('parts/site_banner');
         </div>
     </div>
 </div>
+
+<?php get_footer() ?>
