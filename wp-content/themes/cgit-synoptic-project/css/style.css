@@ -10046,14 +10046,17 @@ textarea:focus {
   .site-header .main-nav {
     background-color: #FFF;
     position: absolute;
-    top: 159px;
+    top: 158px;
     width: 100%;
-    border-top: 1px solid #FFF; }
+    border-top: 1px solid #01cfff;
+    z-index: 999999;
+    border-bottom: 1px solid #01cfff; }
     @media all and (min-width: 800px) {
       .site-header .main-nav {
         top: 122px;
         right: 0;
-        max-width: 300px; } }
+        max-width: 300px;
+        border-left: 1px solid #01cfff; } }
     @media all and (min-width: 1280px) {
       .site-header .main-nav {
         position: static;
@@ -10062,7 +10065,8 @@ textarea:focus {
         padding-right: 1.4rem;
         border-top: none;
         width: auto;
-        display: flex; } }
+        display: flex;
+        border: none; } }
     @media all and (max-width: 1279px) {
       .site-header .main-nav.--hidden {
         display: none; } }

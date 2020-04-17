@@ -56,14 +56,17 @@
     .main-nav {
         background-color: #FFF;
         position: absolute;
-        top: 159px;
+        top: 158px;
         width: 100%;
-        border-top: 1px solid #FFF;
+        border-top: 1px solid $blue;
+        z-index: 999999;
+        border-bottom: 1px solid $blue;
 
         @include media-query(milli) {
             top: 122px;
             right: 0;
             max-width: 300px;
+            border-left: 1px solid $blue;
         }
 
         @include media-query(mega) {
@@ -74,6 +77,7 @@
             border-top: none;
             width: auto;
             display: flex;
+            border: none;
         }
 
         &.--hidden {
