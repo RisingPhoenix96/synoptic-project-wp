@@ -1,0 +1,37 @@
+.sidebar {
+    @extend .col-12;
+    @extend .col-normal-3;
+    @include trim-content-top;
+
+    ul {
+        padding: 0;
+
+        li {
+            list-style: none;
+        }
+
+        li>a {
+            text-decoration: none;
+            color: $text-color;
+            padding: 1em;
+            display: block;
+            border-bottom: 2px solid transparent;
+
+            &:hover {
+                text-decoration: none;
+                color: #FFF;
+                background-color: darken($blue, 10%);
+            }
+        }
+
+        li>a.catalogue_sidebar_active {
+            background-color: darken($blue, 10%);
+            color: #FFF;
+        }
+
+        li.current-cat>a {
+            background-color: darken($blue, 10%);
+            color: #FFF;
+        }
+    }
+}

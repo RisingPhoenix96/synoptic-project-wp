@@ -1,7 +1,5 @@
 <?php
 
-/** Template Name: Blog Archive Page */
-
 get_header();
 
 get_template_part('parts/site_banner');
@@ -14,7 +12,7 @@ get_template_part('parts/site_banner');
             <div class="posts-list">
                 <div class="posts-wrap">
 
-                    <?php get_template_part('parts/blog_post_list'); ?>
+                    <?php get_template_part('parts/posts'); ?>
 
                 </div>
             </div>

@@ -491,7 +491,7 @@ pre {
     padding-right: 0;
     padding-left: 0; }
 
-.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .portfolio-page-content .photo-gallery .image-wrap .gallery-popup-image, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .portfolio-page-content .photo-gallery, .portfolio-page-content .sidebar, .about-me-page-content .image, .about-me-page-content .text, .blog-content .posts-list, .blog-content .posts-list .posts-wrap .post, .blog-content .sidebar, .contact-page-content .contact-form .input-wrap, .col,
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .portfolio-page-content .photo-gallery .image-wrap .gallery-popup-image, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .portfolio-page-content .photo-gallery, .about-me-page-content .image, .about-me-page-content .text, .blog-content .posts-list, .blog-content .posts-list .posts-wrap .post, .blog-content .sidebar, .sidebar, .contact-page-content .contact-form .input-wrap, .col,
 .col-auto, .col-nano-1, .col-nano-2, .col-nano-3, .col-nano-4, .col-nano-5, .col-nano-6, .col-nano-7, .col-nano-8, .col-nano-9, .col-nano-10, .col-nano-11, .col-nano-12, .col-nano,
 .col-nano-auto, .col-micro-1, .col-micro-2, .col-micro-3, .col-micro-4, .col-micro-5, .col-micro-6, .col-micro-7, .col-micro-8, .col-micro-9, .col-micro-10, .col-micro-11, .col-micro-12, .col-micro,
 .col-micro-auto, .col-milli-1, .col-milli-2, .col-milli-3, .col-milli-4, .col-milli-5, .col-milli-6, .col-milli-7, .col-milli-8, .col-milli-9, .col-milli-10, .col-milli-11, .col-milli-12, .col-milli,
@@ -584,7 +584,7 @@ pre {
   flex: 0 0 91.66667%;
   max-width: 91.66667%; }
 
-.col-12, .portfolio-page-content .photo-gallery, .portfolio-page-content .sidebar, .about-me-page-content .image, .about-me-page-content .text, .blog-content .posts-list, .blog-content .posts-list .posts-wrap .post, .blog-content .sidebar, .contact-page-content .contact-form .input-wrap {
+.col-12, .portfolio-page-content .photo-gallery, .about-me-page-content .image, .about-me-page-content .text, .blog-content .posts-list, .blog-content .posts-list .posts-wrap .post, .blog-content .sidebar, .sidebar, .contact-page-content .contact-form .input-wrap {
   flex: 0 0 100%;
   max-width: 100%; }
 
@@ -1053,7 +1053,7 @@ pre {
   .col-normal-2 {
     flex: 0 0 16.66667%;
     max-width: 16.66667%; }
-  .col-normal-3, .portfolio-page-content .sidebar, .blog-content .sidebar {
+  .col-normal-3, .blog-content .sidebar, .sidebar {
     flex: 0 0 25%;
     max-width: 25%; }
   .col-normal-4 {
@@ -10273,26 +10273,6 @@ textarea:focus {
     @media all and (min-width: 640px) {
       .portfolio-page-content .photo-gallery .image-wrap .gallery-popup-image {
         margin-bottom: 2rem; } }
-  .portfolio-page-content .sidebar > :first-child,
-  .portfolio-page-content .sidebar > :first-child :first-child {
-    margin-top: 0; }
-  .portfolio-page-content .sidebar ul {
-    padding: 0; }
-    .portfolio-page-content .sidebar ul li {
-      list-style: none; }
-    .portfolio-page-content .sidebar ul li > a {
-      text-decoration: none;
-      color: #2a2a2a;
-      padding: 1em;
-      display: block;
-      border-bottom: 2px solid transparent; }
-      .portfolio-page-content .sidebar ul li > a:hover {
-        text-decoration: none;
-        color: #FFF;
-        background-color: #00a6cd; }
-    .portfolio-page-content .sidebar ul li > a.catalogue_sidebar_active {
-      background-color: #00a6cd;
-      color: #FFF; }
 
 .about-me-page-content {
   margin-top: 1rem; }
@@ -10328,6 +10308,31 @@ textarea:focus {
   .blog-content .sidebar > :first-child,
   .blog-content .sidebar > :first-child :first-child {
     margin-top: 0; }
+
+.sidebar > :first-child,
+.sidebar > :first-child :first-child {
+  margin-top: 0; }
+
+.sidebar ul {
+  padding: 0; }
+  .sidebar ul li {
+    list-style: none; }
+  .sidebar ul li > a {
+    text-decoration: none;
+    color: #2a2a2a;
+    padding: 1em;
+    display: block;
+    border-bottom: 2px solid transparent; }
+    .sidebar ul li > a:hover {
+      text-decoration: none;
+      color: #FFF;
+      background-color: #00a6cd; }
+  .sidebar ul li > a.catalogue_sidebar_active {
+    background-color: #00a6cd;
+    color: #FFF; }
+  .sidebar ul li.current-cat > a {
+    background-color: #00a6cd;
+    color: #FFF; }
 
 .contact-page-content .main-wrap {
   max-width: 622px;

@@ -24,7 +24,7 @@ add_action('init', function () {
             'archives' => $name_singular . ' Archives',
         ],
         'rewrite' => [
-            'slug' => 'gallery-category'
+            'slug' => 'photo-catalogue/category'
         ],
         'supports' => [
             'title',
@@ -36,16 +36,4 @@ add_action('init', function () {
         'has_archive' => true,
         'menu_icon' => 'dashicons-images-alt',
     ]);
-    // register_taxonomy('course-location', 'course', [
-    //     'label' => 'Tour Locations',
-    //     'labels' => [
-    //         'name' => 'Locations',
-    //         'singular_name' => 'Location',
-    //     ],
-    //     'rewrite' => [
-    //         'slug' => 'tour-location',
-    //     ],
-    //     'public' => false,
-    //     'show_ui' => true,
-    // ]);
 });
