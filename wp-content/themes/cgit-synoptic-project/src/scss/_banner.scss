@@ -1,13 +1,13 @@
 .site-banner {
     @include page-section-spacer(margin, false, true);
-    padding: 3rem 1rem;
+    padding: 3rem 0;
     background-image: url(#{$image_dir}/banner_default.png);
     background-position: center;
     background-size: cover;
 
     @include media-query(milli) {
         //padding: 6rem 4rem;
-        padding: 4.23rem 4rem;
+        padding: 4.23rem 0;
     }
 
     .text-box {

@@ -10157,7 +10157,7 @@ textarea:focus {
 
 .site-banner {
   margin-bottom: 9rem;
-  padding: 3rem 1rem;
+  padding: 3rem 0;
   background-image: url(/wp-content/themes/cgit-synoptic-project/images/banner_default.png);
   background-position: center;
   background-size: cover; }
@@ -10169,7 +10169,7 @@ textarea:focus {
       margin-bottom: 6rem; } }
   @media all and (min-width: 800px) {
     .site-banner {
-      padding: 4.23rem 4rem; } }
+      padding: 4.23rem 0; } }
   .site-banner .text-box {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 2rem;
@@ -10238,7 +10238,6 @@ textarea:focus {
     margin: 0.333333333em 0; }
 
 .homepage-content-gallery {
-  height: calc(100vh - 138px);
   position: relative;
   overflow: hidden; }
   .homepage-content-gallery .page-wrap {
