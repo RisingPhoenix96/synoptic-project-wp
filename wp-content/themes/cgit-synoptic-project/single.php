@@ -2,7 +2,7 @@
 
 get_header();
 
-get_template_part('parts/site_banner.php');
+get_template_part('parts/site_banner');
 
 ?>
 
@@ -13,3 +13,5 @@ get_template_part('parts/site_banner.php');
         </div>
     </div>
 </div>
+
+<?php get_footer() ?>
