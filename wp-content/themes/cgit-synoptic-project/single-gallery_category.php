@@ -1,7 +1,5 @@
 <?php
 
-/** Template Name: Photo Archive Page */
-
 get_header();
 
 get_template_part('parts/site_banner');
@@ -16,7 +14,7 @@ get_template_part('parts/introductory_text');
             <div class="photo-gallery">
                 <div class="image-wrap">
 
-                    <?php get_template_part('parts/catalogue_gallery'); ?>
+                    <?php get_template_part('parts/catalogue_gallery_category'); ?>
 
                 </div>
             </div>
@@ -26,5 +24,7 @@ get_template_part('parts/introductory_text');
         </div>
     </div>
 </div>
+
+
 
 <?php get_footer() ?>
