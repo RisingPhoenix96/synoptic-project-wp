@@ -10276,6 +10276,23 @@ textarea:focus {
   .portfolio-page-content .sidebar > :first-child,
   .portfolio-page-content .sidebar > :first-child :first-child {
     margin-top: 0; }
+  .portfolio-page-content .sidebar ul {
+    padding: 0; }
+    .portfolio-page-content .sidebar ul li {
+      list-style: none; }
+    .portfolio-page-content .sidebar ul li > a {
+      text-decoration: none;
+      color: #2a2a2a;
+      padding: 1em;
+      display: block;
+      border-bottom: 2px solid transparent; }
+      .portfolio-page-content .sidebar ul li > a:hover {
+        text-decoration: none;
+        color: #FFF;
+        background-color: #00a6cd; }
+    .portfolio-page-content .sidebar ul li > a.catalogue_sidebar_active {
+      background-color: #00a6cd;
+      color: #FFF; }
 
 .about-me-page-content {
   margin-top: 1rem; }
