@@ -10066,7 +10066,8 @@ textarea:focus {
         border-top: none;
         width: auto;
         display: flex;
-        border: none; } }
+        border: none;
+        z-index: initial; } }
     @media all and (max-width: 1279px) {
       .site-header .main-nav.--hidden {
         display: none; } }

@@ -78,6 +78,7 @@
             width: auto;
             display: flex;
             border: none;
+            z-index: initial;
         }
 
         &.--hidden {
