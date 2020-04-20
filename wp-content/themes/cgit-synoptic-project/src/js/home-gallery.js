@@ -1,3 +1,8 @@
+/**
+ * Creates the homepage background image slider
+ * Requires tiny-slider npm library
+ * https://www.npmjs.com/package/tiny-slider
+ */
 $(function () {
     $('.home-image-gallery').removeClass('--hidden');
 
