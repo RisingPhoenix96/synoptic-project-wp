@@ -12,6 +12,13 @@ add_action('acf/init', function () {
             [
                 'param' => 'page_template',
                 'operator' => '==',
+                'value' => 'templates/blog.php',
+            ],
+        ],
+        [
+            [
+                'param' => 'page_template',
+                'operator' => '==',
                 'value' => 'templates/contact.php',
             ],
         ]

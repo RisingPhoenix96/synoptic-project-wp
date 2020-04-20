@@ -18,7 +18,7 @@
                 <input type="text" id="subject" name="subject">
             </div>
             <div class="input-wrap input-wrap--full-width">
-                <label for="message">Message</label>
+                <label for="message">Message (required)</label>
                 <textarea name="message" id="message" cols="30" rows="10"></textarea>
             </div>
             <div class="input-wrap input-wrap--full-width">
