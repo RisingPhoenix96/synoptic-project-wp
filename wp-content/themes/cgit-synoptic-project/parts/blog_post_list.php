@@ -17,7 +17,7 @@ $posts = get_posts($args);
 
         <?php
         $post_content = get_post_field('post_content', $post->ID);
-        $post_thumnbnail_url = get_the_post_thumbnail_url($post->ID);
+        $post_thumnbnail_url = get_the_post_thumbnail_url($post->ID, 'blog_post_thumbnail');
         ?>
 
         <a class="post" href="<?= get_the_permalink($post->ID) ?>">
