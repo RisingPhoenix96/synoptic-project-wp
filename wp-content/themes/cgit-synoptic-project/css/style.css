@@ -10102,16 +10102,8 @@ textarea:focus {
         @media all and (min-width: 1280px) {
           .site-header .main-nav ul li.current-menu-item > a {
             background-color: #FFF;
-            color: #2a2a2a;
-            position: relative; }
-            .site-header .main-nav ul li.current-menu-item > a:after {
-              content: "";
-              width: 25px;
-              height: 3px;
-              background-color: #01cfff;
-              position: absolute;
-              bottom: 0;
-              left: calc(50% - 11px); } }
+            color: #01cfff;
+            position: relative; } }
       .site-header .main-nav ul li > a {
         color: #2a2a2a;
         display: block;

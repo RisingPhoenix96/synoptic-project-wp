@@ -127,18 +127,8 @@
 
                 @include media-query(mega) {
                     background-color: #FFF;
-                    color: $text-color;
+                    color: $blue;
                     position: relative;
-
-                    &:after {
-                        content: "";
-                        width: 25px;
-                        height: 3px;
-                        background-color: $blue;
-                        position: absolute;
-                        bottom: 0;
-                        left: calc(50% - 11px);
-                    }
                 }
 
             }
